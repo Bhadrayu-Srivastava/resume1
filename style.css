@@ -1,0 +1,276 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    border: border-box;
+    font-family: Arial;
+    text-decoration: none;
+    background-color: #D7EEEA;
+    color: black;
+    box-sizing: border-box;
+}
+
+.overflow{
+    overflow: hidden;
+}
+
+.navbar{
+    height: 100px;
+    background-color: #02031C;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-basis: auto;
+    align-items: center;
+    font-size: 2rem;
+    color: #FDC500;
+    position: static;
+    width: 100%;
+}
+
+.aboutcontent{
+    display: flex;
+    align-items:normal;
+    font-size: 30px;
+    justify-items: center;
+    gap: 100px;
+    padding-left: 120px;
+    flex-direction: row;
+}
+
+img{
+    height: 9cm;
+    width: 100%;
+    border: 5px solid #02031C;
+}
+
+.image{
+    
+    display: flex;
+}
+
+h1{
+    font-size: 3rem;
+    text-decoration: underline;
+    padding-left: 80px;
+    color: #02031C;
+}
+
+table{
+    width: 80%;
+    height: 400px;
+    text-align: center;
+    border-collapse: collapse;   
+    padding-right: 30px;
+    padding-left: 10%;
+    box-align: center;
+    
+}
+
+table , th,td{
+    border: 3px solid black;
+}
+
+table td , th{
+    padding: 10px;
+}
+
+table th{
+    color: rgb(186, 227, 228);
+    font-size: 2rem;
+    background-color:#02031C ;
+    border-color:rgb(186, 227, 228) ;
+}
+
+.table{
+    padding-left: 10%;
+}
+
+.myskills{
+    padding-left: 120px;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.mobile{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.border{
+    border: 2px solid transparent;
+    transition-property: all;
+    transition-timing-function: ease-in;
+}
+
+.border:hover{
+    border: 2px solid white;
+    transform: scale(1.7);
+}
+
+#pi:hover{
+    border: 2px solid white;
+    transform: scale(1.35);
+}
+
+#ci:hover{
+    border: 2px solid white;
+    transform: scale(1.35);
+}
+
+#para{
+    display: flex;
+    padding-top: 25px;
+}
+
+/*RESPONISVE*/
+
+
+@media screen and (max-width : 1110px) {
+
+    .aboutcontent{
+        font-size: 25px;
+        gap: 70px;
+    }
+    
+}
+
+@media screen and (max-width : 1022px) {
+
+    .aboutcontent{
+        flex-direction: column;
+    }
+
+    .border:hover{
+        border: 2px solid white;
+        transform: scale(1);
+    }
+
+        
+    #pi:hover{
+        border: 2px solid white;
+        transform: scale(1);
+    }
+
+    #ci:hover{
+        border: 2px solid white;
+        transform: scale(1);
+    }
+    
+    .image{
+        justify-content: left; 
+        width: 75%;
+    }
+
+    .navbar{
+        flex-direction: column;
+        height: fit-content;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    table{
+        width: 90%;
+        align-self: center;
+    }
+}
+
+@media screen and (max-width : 866px) {
+
+    h1{
+        font-size: 2rem;
+        padding-left: 40px;
+    }
+
+    .navbar{
+        font-size: 1.5rem;
+    }
+
+    .aboutcontent
+    {
+        font-size: 1.5rem;
+        padding-left: 35px;
+    }
+
+    .myskills{
+        padding-left: 35px;
+        font-size: 1.5rem;
+    }
+
+    .para{
+        padding-left: 10px;
+    }
+
+    .table thead{
+       display: none;
+    }
+
+    .table, .table tbody, .table tr, .table td{
+        display: block;
+        width: 100%;
+    }
+
+    .table tr{
+        margin-bottom: 35px;
+    }
+
+    .table td{
+        text-align: right;
+        padding-left: 50%;
+        text-align: right;
+        position: relative;
+    }
+
+    .table td::before{
+        content: attr(data-label);
+        position: absolute;
+        left: 0;
+        width: 50%;
+        padding-left: 15px;
+        font-weight: bold;
+        text-align: left;
+    }
+}
+
+@media screen and (max-width : 541px)
+{ 
+    h1{
+        font-size: 1.5rem;
+        padding-left: 40px;
+    }
+
+    .navbar{
+        font-size: 1rem;
+    }
+
+    .aboutcontent
+    {
+        font-size: 1rem;
+        padding-left: 10px;
+        text-align: left;
+        gap: 100px;
+    }
+
+    .image{
+        width:85%;
+        padding-left: 20px;
+    }
+
+    .myskills{
+        padding-left: 70px;
+        font-size: 1rem;
+    }
+
+    .para{
+        padding-left: 20px;
+        align-self: center;
+    }
+    
+}
+
+@media screen and (max-width : 420px) {
+    img{
+        width: 85%;
+    }
+}
